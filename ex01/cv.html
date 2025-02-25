@@ -1,0 +1,63 @@
+<!-- Vous devez respecter la sémantique de vos balises HTML, ainsi que la séparation
+du fond et de la forme.
+• Vous devez produire un fichier HTML cohérent dans sa structure avec un contenu
+minimum imposé : nom, prénom, compétences et parcours.
+• Vous devez afficher au moins un titre avec la balise title et un titre avec la balise
+h1.
+• Vous devez utiliser au moins un tableau avec les balises table, th, tr et td.
+• Vous devez utiliser au moins une liste avec la balise ul et une liste avec la balise
+ol. Les éléments doivent utiliser la balise li.
+• Les bordures des tableaux doivent être visibles (solid). Les bordures des tableaux
+doivent être fusionnées (collapse).
+• La cellule la plus en bas à droite de chaque tableau doit avoir #424242 comme
+couleur de bordure.
+• Vous devrez utiliser une solution syntaxique différente pour chacune des deux
+consignes précédentes : pour la première utilisez la balise style dans le head de
+votre page. Pour la seconde, utilisez un attribut style dans une balise qui vous
+paraît adaptée. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curriculum vitae</title>
+        <meta charset="utf-8"/>
+        <style>
+            table, th, td {
+                border: solid;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 align="center">My awesome Curriculum vitae</h1>
+            <h4 align="center">it's a joke</h4>
+        </header>
+        <hr/>
+        <div>
+            <h2>Presentation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac est non nibh iaculis tempus.
+               Suspendisse pharetra semper metus non ornare. Nunc elit diam, accumsan at sodales eu, sodales ut purus.
+               Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+               Vestibulum id maximus ex. Pellentesque vel lacinia ex. Maecenas laoreet, purus vitae facilisis hendrerit,
+               velit eros laoreet arcu, ac luctus quam nulla ac nisl.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>COMPETENCES</td>
+                    </tr>
+                <tr>
+                    <th>Language</th>
+                    <td>c</td>
+                    <td>c++</td>
+                    <td>html/css</td>
+                </tr>
+                <tr>
+                    <th>tools</th>
+                    <td>Virtualbox</td>
+                    <td>Docker</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
