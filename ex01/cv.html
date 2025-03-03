@@ -4,68 +4,123 @@
         <title>Curriculum vitae</title>
         <meta charset="utf-8"/>
         <style>
-            div {
-                background-color: #015eea;
+            body {
+                margin: 20px;
+                margin-left: 250px;
+                margin-right: 250px;
+                display: flex;
+                flex-direction: column;
             }
-            hr {
-                color: #0118ea;
+
+            #content {
+                display: flex;
+                gap: 10px;
             }
-            table, th, td {
+            .in_content{
+                padding-top: 20px;
+                padding-bottom: 45px;
+            }
+            #left {
+                flex-grow: 2;
+                background-color: rgb(18, 18, 151);
+                color:white;
+                text-align: center;
+                box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.8);
+            }
+            #right {
+                flex-grow: 1;
+                background-color: rgb(204, 204, 248);
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            ul, ol {
+                text-align: left;
+            }
+            table, th, tr, td {
+                text-align: center;
                 border: solid 2px;
                 border-collapse: collapse;
+                border-color: white;
+                padding: 5px;
             }
         </style>
     </head>
-    <body style="background-color: #6ea3f3;">
-            <header>
-                <h1 align="center">Curriculum vitae</h1>
-            </header>
-            <hr/>
-            <div>
-                <h3>Presentation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac est non nibh iaculis tempus.
-                    Suspendisse pharetra semper metus non ornare. Nunc elit diam, accumsan at sodales eu, sodales ut purus.
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
-                    Vestibulum id maximus ex. Pellentesque vel lacinia ex. Maecenas laoreet, purus vitae facilisis hendrerit,
-                    velit eros laoreet arcu, ac luctus quam nulla ac nisl.
+    <body>
+        <div id="top">
+            <h1 align="center">Curriculum vitae</h1>
+            <hr style="color: blue;"/>
+        </div>
+        <div id="content">
+            <div id="left" class="in_content">
+                <h3>Bruce WAYNE</h3>
+                <hr style="color: white; width: 200px;"/>
+                <p>After saving my city and the world several times, I realized that I yearned for more calm in my life, which is why I turned to sewing. With my ability and my natural dexterity, I very quickly learned new techniques.
+                    I am sure that I would become a key part of your company.</p><br/>
+                    <hr style="color: white; width: 200px;"/>
+                    <h3>COMPETENCES</h3>
+                    <ul>
+                        <li>Billionaire</li>
+                        <li>Athletic</li>
+                        <li>Dexterity</li>
+                    </ul><br/>
+                    <hr style="color: white; width: 200px;"/>
+                    <h3>TOOLS</h3>
+                    <ol>
+                        <li>tape measure</li>
+                        <li>tailor scissors</li>
+                        <li>pins</li>
+                    </ol>
+                    <hr style="color: white; width: 200px;"/>
+                    <h3>center of interest</h3>
+                    <ul>
+                        <li>fight crime</li>
+                        <li>combat sport</li>
+                        <li>ride</li>
+                    </ul>
+            </div>
+            <div id="right" class="in_content">
+                <h3>Lorem Ipsum</h3>
+                <p>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit nisl, commodo ut ullamcorper eget, vestibulum et risus. Donec quis lobortis neque, sit amet cursus ante. Nam vitae magna non diam feugiat scelerisque. Etiam tempor odio sit amet odio bibendum, eu ultricies erat porta. Nunc rhoncus est enim, vitae aliquam neque blandit vel. Proin commodo bibendum sapien a sodales. Aenean accumsan, tortor nec egestas volutpat, neque massa auctor nisl, nec hendrerit metus nisl nec metus. Vestibulum bibendum risus justo, a eleifend metus pharetra sit amet. Suspendisse vel odio interdum, fermentum est at, efficitur orci.
+                    
+                    Donec vehicula turpis eu consectetur interdum. Cras rhoncus orci dui, et accumsan dui sodales ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse ipsum massa, porta sollicitudin bibendum vel, mattis eu magna. Aliquam fringilla blandit tortor vel euismod. Integer pellentesque aliquam sodales. Aliquam urna tortor, condimentum sed dapibus a, gravida quis odio. Pellentesque vulputate eget nisi id vestibulum. Vestibulum ac nulla in mi auctor vulputate. Quisque magna purus, dictum ut lectus eget, faucibus mattis nisi. Quisque nec mi convallis, porttitor sem eu, gravida lectus. Suspendisse dignissim enim magna, nec malesuada augue fermentum at. 
                 </p>
-            </div>
-            <hr/>
-            <div>
-                <h3>Qui suis je</h3>
-                <ul>
-                    <li>NOM: Batman</li>
-                    <li>ALIAS: Bruce Wayne</li>
-                    <li>AGE: 86 ans</li>
-                    <li>POSTE ACTUEL: justicier</li>
-                </ul>
-                <h3>Language</h3>
-                <ol>
-                    <li>klingon</li>
-                    <li>kryptonien</li>
-                    <li>wakandais</li>
-                </ol>
-            </div>
-            <hr/>
-            <div>
+                <hr style="color: black; width: 90%;"/>
+                <h3>My Experience</h3>
                 <table>
                     <thead>
                         <tr>
-                            <th>COMPETENCE</th>
+                            <th>ENNEMY</th>
+                            <th>DEFEAT</th>
+                            <th>VICTORY</th>
+                            <th>HOW WIN</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>grappin</td>
+                            <th>Bane</th>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit nisl, commodo ut ullamcorper eget, vestibulum et risus. Donec quis lobortis neque, sit amet cursus ante. Nam vitae magna non diam feugiat scelerisque. Etiam tempor odio sit amet odio bibendum, eu ultricies erat porta. Nunc rhoncus est enim, vitae aliquam neque blandit vel. Proin commodo bibendum sapien a sodales. Aenean accumsan, tortor nec egestas volutpat, neque massa auctor nisl, nec hendrerit metus nisl nec metus. Vestibulum bibendum risus justo, a eleifend metus pharetra sit amet. Suspendisse vel odio interdum, fermentum est at, efficitur orci. </td>
                         </tr>
                         <tr>
-                            <td>combat rapproche</td>
+                            <th>Black Mask</th>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit nisl, commodo ut ullamcorper eget, vestibulum et risus. Donec quis lobortis neque, sit amet cursus ante. Nam vitae magna non diam feugiat scelerisque. Etiam tempor odio sit amet odio bibendum, eu ultricies erat porta. Nunc rhoncus est enim, vitae aliquam neque blandit vel. Proin commodo bibendum sapien a sodales. Aenean accumsan, tortor nec egestas volutpat, neque massa auctor nisl, nec hendrerit metus nisl nec metus. Vestibulum bibendum risus justo, a eleifend metus pharetra sit amet. Suspendisse vel odio interdum, fermentum est at, efficitur orci. </td>
                         </tr>
                         <tr>
-                            <td style="border-color: #424242;">multi milliardaire</td>
+                            <th>Scarecrow</th>
+                            <td>4</td>
+                            <td>6</td>
+                            <td style="border: solid #424242;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit nisl, commodo ut ullamcorper eget, vestibulum et risus. Donec quis lobortis neque, sit amet cursus ante. Nam vitae magna non diam feugiat scelerisque. Etiam tempor odio sit amet odio bibendum, eu ultricies erat porta. Nunc rhoncus est enim, vitae aliquam neque blandit vel. Proin commodo bibendum sapien a sodales. Aenean accumsan, tortor nec egestas volutpat, neque massa auctor nisl, nec hendrerit metus nisl nec metus. Vestibulum bibendum risus justo, a eleifend metus pharetra sit amet. Suspendisse vel odio interdum, fermentum est at, efficitur orci. </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+        </div>
     </body>
+
 </html>
