@@ -45,6 +45,7 @@ function displayFormContents() {
     <head>
         <title>Formulaire</title>
         <meta charset="utf-8"/>
+        <script src="popup.js"></script>
         <style>
             body {
                 display: flex;
@@ -55,7 +56,7 @@ function displayFormContents() {
             .form {
                 background-color: rgb(184, 179, 179);
                 border: solid 1px;
-                box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.8);
+                box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.8);
                 padding: 10px;
             }
             .form-content {
@@ -112,15 +113,15 @@ function displayFormContents() {
             <div class="radio">
                 <div class="form-content-radio">
                     <label for="gender_male">male</label>
-                    <input type="radio" id="gender_male">
+                    <input type="radio" id="gender_male" name="gender" value="male">
                 </div>
                 <div class="form-content-radio">
                     <label for="gender_female">female</label>
-                    <input type="radio" id="gender_female">
+                    <input type="radio" id="gender_female" name="gender" value="female">
                 </div>
                 <div class="form-content-radio">
                     <label for="gender_other">other</label>
-                    <input type="radio" id="gender_other">
+                    <input type="radio" id="gender_other" name="gender" value="other">
                 </div>
             </div>
             <div class="button">
