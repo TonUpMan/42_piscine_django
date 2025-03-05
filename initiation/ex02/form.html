@@ -1,0 +1,132 @@
+<!-- Réalisez un formulaire HTML qui représente les informations usuelles d’un contact quel-
+conque. Ce formulaire doit proposer tous les champs suivants :
+• Firstname : un champ texte.
+• Name : un champ texte aussi.
+• Age : vous devez utiliser le champ numérique spécifique au HTML5.
+• Phone : vous devez utiliser le champ tel spécifique au HTML5.
+• Email : vous devez utiliser le champ email spécifique au HTML5.
+• Student at 42 ? : vous devez utiliser le champ checkbox.
+• Gender : vous devez utiliser des boutons radio avec les valeurs Male, Female et
+Other.
+• Un bouton de soumission du formulaire. L’attribut onclick de votre bouton doit
+être : ’displayFormContents();’
+
+function displayFormContents() {
+
+	var out = '';
+
+	out += 'Firstname = ' + document.getElementById('firstname').value + '\n';
+	out += 'Name = '      + document.getElementById('name').value      + '\n';
+	out += 'Phone = '     + document.getElementById('phone').value     + '\n';
+	out += 'Age = '       + document.getElementById('age').value       + '\n';
+	out += 'Email = '     + document.getElementById('email').value     + '\n';
+
+	out += 'Gender = ';
+	if (document.getElementById('gender_male').checked == true)
+		out += document.getElementById('gender_male').value;
+	if (document.getElementById('gender_female').checked == true)
+		out += document.getElementById('gender_female').value;
+	if (document.getElementById('gender_other').checked == true)
+		out += document.getElementById('gender_other').value;
+	out += '\n';
+
+	if (document.getElementById('student').checked == true)
+		out += 'Student at 42 = yes';
+	else
+		out += 'Student at 42 = no';
+
+	alert(out);
+
+}
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire</title>
+        <meta charset="utf-8"/>
+        <script src="popup.js"></script>
+        <style>
+            body {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+            }
+            .form {
+                background-color: rgb(184, 179, 179);
+                border: solid 1px;
+                box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.8);
+                padding: 10px;
+            }
+            .form-content {
+                display: flex;
+            }
+            .form-content label {
+                width: 150px;
+                padding-left: 10px;
+            }
+            .form-content input {
+                margin: 1px;
+                margin-right: 5px;
+                flex: 1;
+            }
+            .check {
+                padding-left: 10px;
+            }
+            .radio {
+                display: flex;
+                padding-left: 10px;
+            }
+            .button {
+                margin: 10px;
+                text-align: end;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <div class="form-content">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname">
+            </div>
+            <div class="form-content">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-content">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone">
+            </div>
+            <div class="form-content">
+                <label for="age">age</label>
+                <input type="number" id="age">
+            </div>
+            <div class="form-content">
+                <label for="email">email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="check">
+                <label for="student">Student at 42?</label>
+                <input type="checkbox" id="student">
+            </div>
+            <div class="radio">
+                <div class="form-content-radio">
+                    <label for="gender_male">male</label>
+                    <input type="radio" id="gender_male" name="gender" value="male">
+                </div>
+                <div class="form-content-radio">
+                    <label for="gender_female">female</label>
+                    <input type="radio" id="gender_female" name="gender" value="female">
+                </div>
+                <div class="form-content-radio">
+                    <label for="gender_other">other</label>
+                    <input type="radio" id="gender_other" name="gender" value="other">
+                </div>
+            </div>
+            <div class="button">
+                <input type="button" onclick="displayFormContents()" value="Submit">
+            </div>
+        </div>
+    </body>
+</html>
