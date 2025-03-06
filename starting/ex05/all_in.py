@@ -14,18 +14,9 @@ def find_state(a):
     "NJ": "Trenton",
     "CO": "Denver"
     }
-    for i in capital_cities:
-        if capital_cities[i] == a:
-            key = i
-            find = True
-    if find:
-        for i in states:
-            if states[i] == key:
-                print(i)
-                break
-    else:
-        print("Unknown capital city")
-
+    data = a.split()
+    for i in data:
+        print(i, ",")
 
 if __name__ == '__main__':
     if len(sys.argv) == 2:
