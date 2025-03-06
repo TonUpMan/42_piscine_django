@@ -16,7 +16,7 @@ def find_state(a):
     }
     data = a.split()
     for i in data:
-        print(i, ",")
+        print(i)
 
 if __name__ == '__main__':
     if len(sys.argv) == 2:
