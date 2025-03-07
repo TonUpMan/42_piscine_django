@@ -1,7 +1,7 @@
 import sys
 
-def find_state(a):
-    find = False
+def find_capital(a):
+    key = ""
     states = {
     "Oregon" : "OR",
     "Alabama" : "AL",
@@ -17,12 +17,10 @@ def find_state(a):
     for i in capital_cities:
         if capital_cities[i] == a:
             key = i
-            find = True
-    if find:
+    if key:
         for i in states:
             if states[i] == key:
                 print(i)
-                break
     else:
         print("Unknown capital city")
 
@@ -30,4 +28,4 @@ def find_state(a):
 if __name__ == '__main__':
     if len(sys.argv) == 2:
         a = sys.argv[1]
-        find_state(a)
+        find_capital(a)

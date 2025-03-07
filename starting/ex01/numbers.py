@@ -1,15 +1,9 @@
 def print_numbers():
     with open("numbers.txt") as file:
         data = file.read()
-        nbr = ""
-        for i in data:
-            if i == ',' or i == '\0':
-                print(nbr)
-                nbr = ""
-            else:
-                nbr += i
-        if nbr:
-            print(nbr, end="")
+        nbr = data.split(',')
+        for item in nbr:
+            print(item.strip())
 
 if __name__ == '__main__':
     print_numbers()
